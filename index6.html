@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>TSP con templado simulado</title>
+</head>
+<body>
+    <div class='container'>
+        <h1>Ruta Óptima</h1>
+        <ul>
+            {% for ciudad in ruta %}
+                <li>{{ ciudad }}</li>
+            {% endfor %}
+        </ul>
+        <p>Distancia Total: {{ distancia_total }}</p>
+    </div>
+</body>
+</html>
+
